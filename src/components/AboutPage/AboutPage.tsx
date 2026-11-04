@@ -55,6 +55,8 @@ export default function AboutPage() {
             fetchPriority="high"
           />
         </div>
+
+        <div className={styles.backgroundBlur} />
       </div>
 
       <div className={styles.aboutHeading}>
@@ -90,7 +92,9 @@ export default function AboutPage() {
       </div>
 
       <div className={styles.faqSection}>
-        <h2 className={styles.faqTitle}>Frequently Asked Questions</h2>
+        <div className={styles.faqTitleBox}>
+          <h2 className={styles.faqTitle}>Frequently Asked Questions</h2>
+        </div>
         <div className={styles.faqList}>
           {faqs.map((faq) => (
             <details key={faq.question} className={styles.faqItem}>
